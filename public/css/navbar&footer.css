@@ -1,0 +1,180 @@
+.navbar-expand-lg {
+    width: 100%;
+    position: fixed;
+
+}
+
+nav.navbar {
+    z-index: 4;
+}
+
+.nav2 {
+    width: 100%;
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav2-div {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.options {
+    margin-left: 60px;
+    display: flex;
+    margin-right: 30px;
+    flex-grow: 1.5;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-link {
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#footer {
+    padding: 5% 10%;
+
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+.ul-footer {
+    list-style: none;
+    text-align: left;
+}
+
+.footer-div {
+    display: inline-block;
+}
+
+.end {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.a-footer {
+    text-decoration: none;
+    color: black;
+}
+
+.span-footer {
+    color: blue;
+}
+
+.lawyer-hover {
+    position: absolute;
+    top: 110px;
+    right: 340px;
+    width: 40%;
+    background: transparent;
+    background-color: black;
+    display: none;
+    z-index: 1;
+}
+.lawyer-hover-div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.lawyer-hover-div2 {
+    display: flex;
+}
+.hover-div-a {
+    text-decoration: none;
+    color: white;
+}
+.lawyer:hover .lawyer-hover {
+    display: flex;
+}
+
+.arbitators-hover {
+    position: absolute;
+    top: 110px;
+    right: 220px;
+    width: 40%;
+    background: transparent;
+    background-color: black;
+    display: none;
+    z-index: 1;
+}
+.arbitators-hover-div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.arbitators-hover-div2 {
+    display: flex;
+}
+.arbitators:hover .arbitators-hover {
+    display: flex;
+}
+
+.document-writer-hover {
+    position: absolute;
+    top: 110px;
+    right: 98px;
+    width: 40%;
+    background: transparent;
+    background-color: black;
+    display: none;
+    z-index: 1;
+}
+.document-writer-hover-div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.document-writer-hover-div2 {
+    display: flex;
+}
+.document-writer:hover .document-writer-hover {
+    display: flex;
+}
+
+.mediators-hover {
+    position: absolute;
+    top: 110px;
+    right: 15px;
+    width: 40%;
+    background: transparent;
+    background-color: black;
+    display: none;
+    z-index: 1;
+}
+.mediators-hover-div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.mediators-hover-div2 {
+    display: flex;
+}
+.mediators:hover .mediators-hover {
+    display: flex;
+}
+.nav2-img{
+    width: 75%;
+    height: 90%;
+}

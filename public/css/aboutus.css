@@ -1,0 +1,68 @@
+
+
+hr{
+    border-bottom-style: dotted;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.text{
+    padding-left: 15px;
+}
+.heading{
+    text-decoration: solid;
+}
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 20px 0;
+    width: 100vw;
+    height: 40vh;
+    /* object-fit: cover; */
+    background-image: url("https://images.unsplash.com/photo-1527293797671-06c3be34418f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+
+.about-us h1{
+    
+    font-size: 6rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.about-us-text{
+    padding: 30px 50px;
+    margin-bottom: 5rem;
+}
+
+
+
+.mission-content{
+    display: flex;
+    gap: 20vh;
+    margin: 50px 10vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mission-content ul{
+    font-size: 17px;
+    line-height: 2;
+}
+
+.mission h1{
+    text-align: center;
+}
+
+.mission-content img{
+    height: 40vh;
+    border: 1px solid green;
+   border-radius: 50%;
+}
+
+
+

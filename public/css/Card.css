@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV');
+ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.cards{
+    margin: 2vh;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.card-end{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mid-section{
+    padding: 0 30px;
+    display: flex;
+}
+
+.mid-section h1{
+    font-weight: bold;
+}
+
+.left-side-bar{
+    background-color: aqua;
+    
+}
+
+.right-side-bar{
+    padding: 10px;
+}
+
+.card-section h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.wrapper {
+    width: 100%;
+  }  
+.searchbar{
+    margin: 0 8vw;
+}
+
+.search-button{
+    margin-left: 30px;
+}
+
+
+
+.navbar-expand-lg {
+    width: 100%;
+    position: fixed;
+
+}
+
+nav.navbar {
+    z-index: 4;
+}
+
+.nav2 {
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav2-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options {
+    margin-left: 60px;
+    display: flex;
+    margin-right: 30px;
+    flex-grow: 1.5;
+}
+
+.nav-link {
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#footer {
+    padding: 5% 10%;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+.ul-footer {
+    list-style: none;
+    text-align: left;
+}
+
+.footer-div {
+    display: inline-block;
+}
+
+.end {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.a-footer {
+    text-decoration: none;
+    color: black;
+}
+
+.span-footer {
+    color: blue;
+}
+
+.lawyer-hover,
+.arbitators-hover,
+.document-writer-hover,
+.mediators-hover {
+    position: absolute;
+    width: 350px;
+    background: transparent;
+    background-color: lightgray;
+    display: none;
+    z-index: 1;
+}
+
+.lawyer-hover-div,
+.arbitators-hover-div,
+.document-writer-hover-div,
+.mediators-hover-div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.lawyer-hover-div2,
+.arbitators-hover-div2,
+.document-writer-hover-div2,
+.mediators-hover-div2 {
+    display: flex;
+}
+
+.hover-div-a {
+    text-decoration: none;
+    color: black;
+}
+
+.lawyer:hover .lawyer-hover {
+    display: flex;
+}
+
+.arbitators:hover .arbitators-hover {
+    display: flex;
+}
+
+.document-writer:hover .document-writer-hover {
+    display: flex;
+}
+
+.mediators:hover .mediators-hover {
+    display: flex;
+}
+
+.nav2-img {
+    width: 75%;
+    height: 90%;
+}
+
+
+
+
