@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navjustic() {
   return (
@@ -14,27 +15,27 @@ export default function Navjustic() {
         <div className="lawyer-hover">
           <div className="lawyer-hover-div">
             <div className="lawyer-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a"
-                  href="Pages/LawyerPages/Dispute_Lawyer.html">Dispute Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a"
+                  to="">Dispute Lawyer</Link></div>
             </div>
             <div className="lawyer-hover-div2">
               <div>
                 <img src="" alt=""/>
               </div>
-              <div><a className="hover-div-a" href=""> <i className="fa-regular fa-hand-point-right"></i>Family Lawyer</a></div>
+              <div><Link className="hover-div-a" to=""> <i className="fa-regular fa-hand-point-right"></i>Family Lawyer</Link></div>
             </div>
             <div className="lawyer-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a"
-                  href="Pages/LawyerPages/Criminal_Lawyer.html">Criminal Lawyer</a>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a"
+                  to="/servicelisting">Criminal Lawyer</Link>
               </div>
             </div>
           </div>
           <div className="lawyer-hover-div">
             <div className="lawyer-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Dispute Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Dispute Lawyer</Link></div>
             </div>
             <div className="lawyer-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a">Civial Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a">Civial Lawyer</Link></div>
             </div>
           </div>
         </div>
@@ -47,22 +48,22 @@ export default function Navjustic() {
         <div className="arbitators-hover">
           <div className="arbitators-hover-div">
             <div className="arbitators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Dispute Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Dispute Lawyer</Link></div>
             </div>
             <div className="arbitators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Family Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Family Lawyer</Link></div>
             </div>
             <div className="arbitators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Criminal Lawyer</a>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Criminal Lawyer</Link>
               </div>
             </div>
           </div>
           <div className="arbitators-hover-div">
             <div className="arbitators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Dispute Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Dispute Lawyer</Link></div>
             </div>
             <div className="arbitators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a">Civial Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a">Civial Lawyer</Link></div>
             </div>
           </div>
         </div>
@@ -75,22 +76,22 @@ export default function Navjustic() {
         <div className="document-writer-hover">
           <div className="document-writer-hover-div">
             <div className="document-writer-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Dispute Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Dispute Lawyer</Link></div>
             </div>
             <div className="document-writer-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Family Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Family Lawyer</Link></div>
             </div>
             <div className="document-writer-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Criminal Lawyer</a>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Criminal Lawyer</Link>
               </div>
             </div>
           </div>
           <div className="document-writer-hover-div">
             <div className="document-writer-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Dispute Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Dispute Lawyer</Link></div>
             </div>
             <div className="document-writer-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a">Civial Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a">Civial Lawyer</Link></div>
             </div>
           </div>
         </div>
@@ -103,22 +104,22 @@ export default function Navjustic() {
         <div className="mediators-hover">
           <div className="mediators-hover-div">
             <div className="mediators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Dispute Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Dispute Lawyer</Link></div>
             </div>
             <div className="mediators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Family Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Family Lawyer</Link></div>
             </div>
             <div className="mediators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Criminal Lawyer</a>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Criminal Lawyer</Link>
               </div>
             </div>
           </div>
           <div className="mediators-hover-div">
             <div className="mediators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a" href="">Dispute Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a" to="">Dispute Lawyer</Link></div>
             </div>
             <div className="mediators-hover-div2">
-              <div><i className="fa-regular fa-hand-point-right"></i><a className="hover-div-a">Civial Lawyer</a></div>
+              <div><i className="fa-regular fa-hand-point-right"></i><Link className="hover-div-a">Civial Lawyer</Link></div>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/styles.css'
 
 export default function Middewarepage1() {
     return (
@@ -38,7 +39,6 @@ export default function Middewarepage1() {
             </div>
 
             {/* <!-- Accordian --> */}
-
             <div className="page4">
                 <div className="faq">
                     <div className="faq-left">

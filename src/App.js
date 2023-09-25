@@ -1,16 +1,21 @@
 import './App.css';
-import Navbar from './component/Navbar';
-import Navjustic from './component/Navjustic';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import { Home } from './screens/home';
+import ServiceListing from './screens/ServiceListing';
+import Login from './screens/Login';
+import Signup from './screens/Signup';
 
-import Middewarepage1 from './component/Middewarepage1';
-import Footer from './component/Footer';
 function App() {
   return (
    <>
-   <Navbar/>
-   <Navjustic/>
-   <Middewarepage1/>
-   <Footer/>
+   <Router>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/signup' element={<Signup />} />
+      <Route path="/servicelisting" element={<ServiceListing />} />
+    </Routes>
+   </Router>
    </>
   );
 }

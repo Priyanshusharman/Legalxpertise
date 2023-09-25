@@ -19,7 +19,9 @@ html,body{
     width: 100%;
 }
 
-
+.card{
+    width: 18rem;
+}
 .cards{
     margin: 2vh;
     align-content: center;

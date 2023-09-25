@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -20,19 +21,19 @@ export default function Footer() {
       <h3>SOLUTIONS</h3>
       <ul className="ul-footer">
 
-        <li><a className="a-footer" href="">Talk To Lawyer</a></li>
-        <li><a className="a-footer" href="">Property</a></li>
-        <li><a className="a-footer" href="">Document</a></li>
-        <li><a className="a-footer" href="">Startup</a></li>
+        <li><Link className="a-footer" to="">Talk To Lawyer</Link></li>
+        <li><Link className="a-footer" to="">Property</Link></li>
+        <li><Link className="a-footer" to="">Document</Link></li>
+        <li><Link className="a-footer" to="">Startup</Link></li>
       </ul>
     </div>
     <div className="footer-div">
       <h3>SUPPORT</h3>
       <ul className="ul-footer">
 
-        <li><a className="a-footer" href="">Call Us</a></li>
-        <li><a className="a-footer" href="">WhatsApp</a></li>
-        <li><a className="a-footer" href="mailto:agarwalmanan69@email.com">Email</a></li>
+        <li><Link className="a-footer" to="">Call Us</Link></li>
+        <li><Link className="a-footer" to="">WhatsApp</Link></li>
+        <li><Link className="a-footer" to="mailto:agarwalmanan69@email.com">Email</Link></li>
       </ul>
     </div>
     <div className="footer-div">
@@ -41,10 +42,10 @@ export default function Footer() {
       </div>
       <div>
         <ul className="ul-footer">
-          <li><a className="a-footer" href="aboutus.html">About Us</a></li>
-          <li><a className="a-footer" href="mailto:agarwalmanan69@email.com">Contact Us</a></li>
-          <li><a className="a-footer" href="">Blogs</a></li>
-          <li><a className="a-footer" href="">Careers</a></li>
+          <li><Link className="a-footer" to="aboutus.html">About Us</Link></li>
+          <li><Link className="a-footer" to="mailto:agarwalmanan69@email.com">Contact Us</Link></li>
+          <li><Link className="a-footer" to="">Blogs</Link></li>
+          <li><Link className="a-footer" to="">Careers</Link></li>
         </ul>
       </div>
     </div>
@@ -55,8 +56,8 @@ export default function Footer() {
       <div>
         <ul className="ul-footer">
 
-          <li><a className="a-footer" href="">Privacy Policy</a></li>
-          <li><a className="a-footer" href="">Terms Of Use</a></li>
+          <li><Link className="a-footer" to="">Privacy Policy</Link></li>
+          <li><Link className="a-footer" to="">Terms Of Use</Link></li>
         </ul>
       </div>
     </div>
