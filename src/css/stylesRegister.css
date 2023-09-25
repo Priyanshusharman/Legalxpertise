@@ -5,8 +5,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     background-color: #080710;
+} */
+.signup{
+    background-color: #080710;
+    width: 100vw;
+    height: 100vh;
 }
 .background{
     width: 430px;

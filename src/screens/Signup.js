@@ -4,7 +4,7 @@ import '../css/stylesRegister.css'
 
 const Signup = () => {
     return (
-        <>
+        <div className='signup'>
             <h3>Register As user</h3>
 
             <label for="username">Full Name</label>
@@ -21,7 +21,7 @@ const Signup = () => {
                 <div class="go"><Link href="./LawyerRegister.html">Register as worker</Link></div>
                 <div class="fb"><Link href="./userLogin.html">Login as user</Link></div>
             </div> 
-        </>
+        </div>
   )
 }
 
