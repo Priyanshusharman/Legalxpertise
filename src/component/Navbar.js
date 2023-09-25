@@ -33,7 +33,7 @@ export default function Navbar() {
                         </ul>
 
                         <Link className="nav-link mx-3" to="/login">Sign In</Link>
-                        <Link className="nav-link mx-3" to="/signup" aria-disabled="true">Register</Link>
+                        <Link className="nav-link mx-3" to="/signupuser" aria-disabled="true">Register</Link>
                        
                         <div id="google_translate_element"></div>
 

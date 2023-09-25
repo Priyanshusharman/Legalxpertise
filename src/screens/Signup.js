@@ -1,8 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../css/stylesRegister.css'
 
+
 const Signup = () => {
+
+    const [credentials,setCredentials] = useState({
+        name:'',
+        dob:'',
+        email:'',
+        password:'',
+    });
+
+    const handleSubmit =async (e)=>{
+        e.preventDefault();
+        const response = await fetch("http://localhost:7000/api/auth/createuser",{
+            method:'POST',
+            headers:{
+                'Content-type': 'application/json'
+            },
+            body:JSON.stringify({name: credentials.name,email:credentials.email,password: credentials.password,dob: credentials.dob})
+        });
+        const json = await response.json();
+        console.log(json.success);
+        if(!json.success){
+            alert("Enter Valid Credentials");
+        }
+    }
+    
+    const onChange = async (event)=>{
+        setCredentials({...credentials,
+            [event.target.name]:event.target.value
+        })
+    }
+
     return (
         <>
         <div class="background">
@@ -13,19 +44,26 @@ const Signup = () => {
         <form id='form'>
             <h3>Register As user</h3>
 
-            <label for="username">Full Name</label>
-            <input type="text" placeholder="Enter your full name" id="username" />
+            <label for="name">Full Name</label>
+            <input 
+                type="text" 
+                placeholder="Enter your full name" 
+                id="name" 
+                onChange={onChange} />
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" placeholder="Date of Birth" id="dob" onChange={onChange} />
 
             <label fordsaf="email">Email</label>
-            <input type="email" placeholder="Email" id="email" />
+            <input type="email" placeholder="Email" id="email" onChange={onChange} />
 
             <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="password" />
+            <input type="password" placeholder="Password" id="password" onChange={onChange} />
 
-            <button>Register </button>
+            <button onClick={handleSubmit}>Register </button>
             <div class="social">
-                <div class="go"><Link href="./LawyerRegister.html">Register as worker</Link></div>
-                <div class="fb"><Link href="./userLogin.html">Login as user</Link></div>
+                <div class="go"><Link to="">Register as worker</Link></div>
+                <div class="fb"><Link to="">Login as user</Link></div>
             </div> 
             </form>
         </div>
