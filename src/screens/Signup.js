@@ -41,29 +41,33 @@ const Signup = () => {
         <div class="shape"></div>
         </div>
         <div className='signup'>
-        <form id='form'>
+        <form id='form' method='POST'>
             <h3>Register As user</h3>
 
             <label for="name">Full Name</label>
             <input 
                 type="text" 
                 placeholder="Enter your full name" 
-                id="name" 
+                id="name"
+                name="name"
                 onChange={onChange} 
                 value={credentials.name}
                 />
 
             <label for="dob">Date of Birth</label>
-            <input type="date" placeholder="Date of Birth" id="dob" onChange={onChange} 
+            <input type="date" placeholder="Date of Birth" id="dob" onChange={onChange}
+            name='dob'
             value={credentials.dob} />
 
             <label fordsaf="email">Email</label>
             <input type="email" placeholder="Email" id="email" onChange={onChange} 
+            name="email"
                 value={credentials.email}
             />
 
             <label for="password">Password</label>
             <input type="password" placeholder="Password" id="password" onChange={onChange} 
+            name = "password"
                 value={credentials.password}
             />
 
