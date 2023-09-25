@@ -49,16 +49,23 @@ const Signup = () => {
                 type="text" 
                 placeholder="Enter your full name" 
                 id="name" 
-                onChange={onChange} />
+                onChange={onChange} 
+                value={credentials.name}
+                />
 
             <label for="dob">Date of Birth</label>
-            <input type="date" placeholder="Date of Birth" id="dob" onChange={onChange} />
+            <input type="date" placeholder="Date of Birth" id="dob" onChange={onChange} 
+            value={credentials.dob} />
 
             <label fordsaf="email">Email</label>
-            <input type="email" placeholder="Email" id="email" onChange={onChange} />
+            <input type="email" placeholder="Email" id="email" onChange={onChange} 
+                value={credentials.email}
+            />
 
             <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="password" onChange={onChange} />
+            <input type="password" placeholder="Password" id="password" onChange={onChange} 
+                value={credentials.password}
+            />
 
             <button onClick={handleSubmit}>Register </button>
             <div class="social">
