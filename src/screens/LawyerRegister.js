@@ -51,7 +51,7 @@ const LawyerRegister = () => {
 
             <label htmlFor="name">Full Name</label>
             <input 
-              class="input"
+              className="input"
                 type="text" 
                 placeholder="Enter your full name" 
                 id="name"
@@ -60,44 +60,28 @@ const LawyerRegister = () => {
                 value={credentials.name}
                 />
 
-<<<<<<< HEAD
-            <label htmlFor="dob">Date of Birth</label>
-            <input type="date" placeholder="Date of Birth" id="dob" onChange={onChange}
-            name='dob'
-            value={credentials.dob} />
-
-            <label fordsaf="email">Email</label>
-            <input type="email" placeholder="Email" id="email" onChange={onChange} 
-=======
-            <label for="email">Email</label>
-            <input class="input" type="email" placeholder="Email" id="email" onChange={onChange} 
->>>>>>> 5ba092f3edb2582749c8c61d87af9a4d63478a6b
+            <label htmlFor="email">Email</label>
+            <input className="input" type="email" placeholder="Email" id="email" onChange={onChange} 
             name="email"
                 value={credentials.email}
             />
 
-<<<<<<< HEAD
             <label htmlFor="password">Password</label>
             <input type="password" placeholder="Password" id="password" onChange={onChange} 
-=======
-            <label for="password">Password</label>
-            <input class="input"
-            type="password" placeholder="Password" id="password" onChange={onChange} 
->>>>>>> 5ba092f3edb2582749c8c61d87af9a4d63478a6b
             name = "password"
                 value={credentials.password}
             />
 
       <label>Gender</label>
-      <div class='gender'>
-        <input class='radio' type="radio" value="male" name="gender" /> Male
-        <input class='radio' type="radio" value="female" name="gender" /> Female
-        <input class='radio' type="radio" value="other" name="gender" /> Other
+      <div className='gender'>
+        <input className='radio' type="radio" value="male" name="gender" /> Male
+        <input className='radio' type="radio" value="female" name="gender" /> Female
+        <input className='radio' type="radio" value="other" name="gender" /> Other
       </div> 
        <label>   
-      <div class="input-group">
-        <span class="input-group-text" id="basic-addon3">State</span>
-        <select name="State" class="form-control" id="State">
+      <div className="input-group">
+        <span className="input-group-text" id="basic-addon3">State</span>
+        <select name="State" className="form-control" id="State">
             <option value="0" label="Select a State ... " selected="selected">Select a State ... </option>
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -140,27 +124,27 @@ const LawyerRegister = () => {
         </label> 
 
         <label>
-        <div class="input-group mb-3">
-      <span class="input-group-text">Pin Code
+        <div className="input-group mb-3">
+      <span className="input-group-text">Pin Code
       </span>
-      <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" />
+      <input type="number" className="form-control" aria-label="Amount (to the nearest dollar)" />
   </div>
         </label>
         
     <label>
-    <div class="input-group mb-3">
-    <span class="input-group-text">BarID</span>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" />
-    <span class="input-group-text">ID No.</span>
-    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" />
-    <span class="input-group-text">Year</span>
-    <input type="month" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" />
+    <div className="input-group mb-3">
+    <span className="input-group-text">BarID</span>
+    <input type="text" className="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" />
+    <span className="input-group-text">ID No.</span>
+    <input type="number" className="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" />
+    <span className="input-group-text">Year</span>
+    <input type="month" className="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" />
   </div>
     </label>
 
     <label>
-    <div class="input-group mb-3">
-    <span class="input-group-text">Bar council certificate or Id card</span>
+    <div className="input-group mb-3">
+    <span className="input-group-text">Bar council certificate or Id card</span>
     <input type="file" />
   </div>
     </label>
