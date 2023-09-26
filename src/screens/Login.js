@@ -55,7 +55,7 @@ const Login = () => {
           <button class="btn btn-primary" onclick={handleSubmit} >Log In</button>
           <br />
           <div class="social">
-            <div class="go"><Link to="/"><button type="button" class="btn btn-secondary">Login as user</button></Link></div>
+            <div class="go"><Link to="/loginlawyer"><button type="button" class="btn btn-secondary">Login as Worker</button></Link></div>
             <div class="fb"><Link to="/signupuser"><button type="button" class="btn btn-secondary">Register as User</button></Link></div>
           </div>
         </form>

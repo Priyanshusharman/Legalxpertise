@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import '../css/userLogin.css'
 import Navbar from "../component/Navbar"
+import Navjustic from '../component/Navjustic';
 const LawyerLogin = () => {
   let navigate = useNavigate();
   const [credentials, setCredentials] = useState({
@@ -39,9 +40,10 @@ const LawyerLogin = () => {
   return (
     <>
       <Navbar />
+      <Navjustic />
       <div className='userlogin'>
         <form id='loginform'>
-          <h3>Login As Legal Workerr</h3>
+          <h3>Login As Legal Worker</h3>
           <br />
           <label for="email">Email</label>
           <input type="email" placeholder="Email" id="email" onChange={onChange}
@@ -55,7 +57,7 @@ const LawyerLogin = () => {
           <button class="btn btn-primary" onclick={handleSubmit} >Log In</button>
           <br />
           <div class="social">
-            <div class="go"><Link to="/"><button type="button" class="btn btn-secondary">Login as User</button></Link></div>
+            <div class="go"><Link to="/loginuser"><button type="button" class="btn btn-secondary">Login as User</button></Link></div>
             <div class="fb"><Link to="/signuplawyer"><button type="button" class="btn btn-secondary">Register as Legal Worker</button></Link></div>
           </div>
         </form>

@@ -46,7 +46,7 @@ const LawyerRegister = () => {
         <Navbar/>
         <div className='user-signup'>
         <form id='user-signup-form' method='POST'>
-            <h3>Register As user</h3>
+            <h3>Register As Worker</h3>
 
             <label for="name">Full Name</label>
             <input 
@@ -77,8 +77,8 @@ const LawyerRegister = () => {
 
             <button onClick={handleSubmit}>Register </button>
             <div class="social">
-                <div class="go"><Link to="">Register as worker</Link></div>
-                <div class="fb"><Link to="">Login as user</Link></div>
+                <div class="go"><Link to="/signupuser">Register as user</Link></div>
+                <div class="fb"><Link to="/loginlawyer">Login as worker</Link></div>
             </div> 
             </form>
         </div>

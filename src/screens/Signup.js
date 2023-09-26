@@ -70,8 +70,8 @@ const Signup = () => {
 
             <button onClick={handleSubmit}>Register </button>
             <div class="social">
-                <div class="go"><Link to="">Register as worker</Link></div>
-                <div class="fb"><Link to="">Login as user</Link></div>
+                <div class="go"><Link to="/signuplawyer">Register as worker</Link></div>
+                <div class="fb"><Link to="/loginuser">Login as user</Link></div>
             </div> 
             </form>
         </div>
