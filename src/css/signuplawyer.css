@@ -1,59 +1,53 @@
-.userlogin{
-    background-color: #ffffff;
-    color: #080710;
+.lawyer-wrapper{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-signup{
+    background-color:  #ffffff;
     width: 100vw;
 }
-
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -80px;
-    top: -80px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
-    bottom: -80px;
-}
-#loginform{
-    height: 700px;
-    width: 500px;
-    background-color: rgba(255,255,255,0.13);
+.background{
+    width: 430px;
+    height: 520px;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 55%;
     left: 50%;
+    top: 50%;
+    padding: 0 30px;
+}
+
+#Lawyer-signup-form{
+    height: 110vh;
+    width: 800px;
+    background-color: rgba(255,255,255,0.13);
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
 }
-#loginform *{
+#Lawyer-signup-form *{
     font-family: 'Poppins',sans-serif;
-    color: #060000;
+    color: #000000;
     letter-spacing: 0.5px;
 }
-#loginform h3{
+#Lawyer-signup-form h3{
     font-size: 32px;
     font-weight: 500;
     line-height: 42px;
     text-align: center;
 }
 
-#loginform label{
+#Lawyer-signup-form label{
     display: block;
     margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
 }
-#loginform input{
+#Lawyer-signup-form .input{
     display: block;
     height: 50px;
     width: 100%;
@@ -67,7 +61,7 @@
 ::placeholder{
     color: #e5e5e5;
 }
-#loginform button{
+#Lawyer-signup-form button{
     margin-top: 50px;
     width: 100%;
     background-color: #ffffff;
@@ -89,7 +83,7 @@
   border-radius: 3px;
   padding: 5px 5px 10px 5px;
   background-color: rgba(255,255,255,0.27);
-  /* color: #eaf0fb; */
+  color: #eaf0fb;
   text-align: center;
 }
 .social div:hover{
@@ -101,21 +95,18 @@
 
 .social a{
     text-decoration: none;
-} 
-/* #loginform{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    line-height: 40px;
-    margin-top: 102px;
-    text-shadow: 2px 2px 5px black;
-    border: 2px solid black;
-    font-size: 1.5em;
-    background-color: antiquewhite;
-    width: 482px;
+
 }
-.userlogin{
+
+.gender{
     display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+}
+
+.radio{
+    width: 30px;
+}
+
+textarea{
+    width: 100%;
+    color: #000000;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../css/stylesRegister.css'
+import '../css/signuplawyer.css'
 import Navbar from '../component/Navbar'
 
 const LawyerRegister = () => {
@@ -43,13 +43,15 @@ const LawyerRegister = () => {
 
     return (
         <>
-        <Navbar/>
-        <div className='user-signup'>
-        <form id='user-signup-form' method='POST'>
+        {/* <Navbar/> */}
+        <div className='lawyer-wrapper'>
+        <div className='lawyer-signup'>
+        <form id='Lawyer-signup-form' method='POST'>
             <h3>Register As Worker</h3>
 
             <label htmlFor="name">Full Name</label>
             <input 
+              class="input"
                 type="text" 
                 placeholder="Enter your full name" 
                 id="name"
@@ -58,6 +60,7 @@ const LawyerRegister = () => {
                 value={credentials.name}
                 />
 
+<<<<<<< HEAD
             <label htmlFor="dob">Date of Birth</label>
             <input type="date" placeholder="Date of Birth" id="dob" onChange={onChange}
             name='dob'
@@ -65,15 +68,107 @@ const LawyerRegister = () => {
 
             <label fordsaf="email">Email</label>
             <input type="email" placeholder="Email" id="email" onChange={onChange} 
+=======
+            <label for="email">Email</label>
+            <input class="input" type="email" placeholder="Email" id="email" onChange={onChange} 
+>>>>>>> 5ba092f3edb2582749c8c61d87af9a4d63478a6b
             name="email"
                 value={credentials.email}
             />
 
+<<<<<<< HEAD
             <label htmlFor="password">Password</label>
             <input type="password" placeholder="Password" id="password" onChange={onChange} 
+=======
+            <label for="password">Password</label>
+            <input class="input"
+            type="password" placeholder="Password" id="password" onChange={onChange} 
+>>>>>>> 5ba092f3edb2582749c8c61d87af9a4d63478a6b
             name = "password"
                 value={credentials.password}
             />
+
+      <label>Gender</label>
+      <div class='gender'>
+        <input class='radio' type="radio" value="male" name="gender" /> Male
+        <input class='radio' type="radio" value="female" name="gender" /> Female
+        <input class='radio' type="radio" value="other" name="gender" /> Other
+      </div> 
+       <label>   
+      <div class="input-group">
+        <span class="input-group-text" id="basic-addon3">State</span>
+        <select name="State" class="form-control" id="State">
+            <option value="0" label="Select a State ... " selected="selected">Select a State ... </option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                </select>
+        </div>
+        </label> 
+
+        <label>
+        <div class="input-group mb-3">
+      <span class="input-group-text">Pin Code
+      </span>
+      <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" />
+  </div>
+        </label>
+        
+    <label>
+    <div class="input-group mb-3">
+    <span class="input-group-text">BarID</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" />
+    <span class="input-group-text">ID No.</span>
+    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" />
+    <span class="input-group-text">Year</span>
+    <input type="month" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" />
+  </div>
+    </label>
+
+    <label>
+    <div class="input-group mb-3">
+    <span class="input-group-text">Bar council certificate or Id card</span>
+    <input type="file" />
+  </div>
+    </label>
+    <label>
+      Bio
+    </label>
+    <textarea placeholder='Write a short bio about yourself' />
+
 
             <button onClick={handleSubmit}>Register </button>
             <div className="social">
@@ -82,6 +177,8 @@ const LawyerRegister = () => {
             </div> 
             </form>
         </div>
+        </div>
+        
         </>
   )
 }

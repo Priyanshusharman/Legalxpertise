@@ -56,7 +56,11 @@ const Signup = () => {
             name='dob'
             value={credentials.dob} />
 
+<<<<<<< HEAD
             <label  htmlFor="email">Email</label>
+=======
+            <label for="email">Email</label>
+>>>>>>> 5ba092f3edb2582749c8c61d87af9a4d63478a6b
             <input type="email" placeholder="Email" id="email" onChange={onChange} 
             name="email"
                 value={credentials.email}

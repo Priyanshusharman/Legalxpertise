@@ -1,7 +1,6 @@
 .user-signup{
     background-color:  #ffffff;
     width: 100vw;
-    height: 100vh;
 }
 .background{
     width: 430px;
@@ -114,4 +113,6 @@
 
 .social a{
     text-decoration: none;
+
 }
+
