@@ -40,8 +40,8 @@ const Signup = () => {
         <div class="shape"></div>
         <div class="shape"></div>
         </div>
-        <div className='signup'>
-        <form id='form' method='POST'>
+        <div className='user-signup'>
+        <form id='user-signup-form' method='POST'>
             <h3>Register As user</h3>
 
             <label for="name">Full Name</label>

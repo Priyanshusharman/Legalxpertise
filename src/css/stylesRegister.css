@@ -8,7 +8,7 @@
 /* body{
     background-color: #080710;
 } */
-.signup{
+.user-signup{
     background-color: #080710;
     width: 100vw;
     height: 100vh;
@@ -44,9 +44,9 @@
     right: -30px;
     bottom: -80px;
 }
-#form{
-    height: 780px;
-    width: 400px;
+#user-signup-form{
+    height: 750px;
+    width: 800px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
@@ -58,27 +58,27 @@
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
 }
-#form *{
+#user-signup-form *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
 }
-#form h3{
+#user-signup-form h3{
     font-size: 32px;
     font-weight: 500;
     line-height: 42px;
     text-align: center;
 }
 
-#form label{
+#user-signup-form label{
     display: block;
     margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
 }
-#form input{
+#user-signup-form input{
     display: block;
     height: 50px;
     width: 100%;
@@ -92,7 +92,7 @@
 ::placeholder{
     color: #e5e5e5;
 }
-#form button{
+#user-signup-form button{
     margin-top: 50px;
     width: 100%;
     background-color: #ffffff;

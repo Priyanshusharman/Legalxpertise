@@ -22,7 +22,7 @@ const ServiceListing = () => {
     <>  
         <div className='main'>
         <h1>Criminal Lawyer</h1>
-        <Card />
+        {}<Card />
         </div>
     </>
   )

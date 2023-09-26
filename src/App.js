@@ -4,6 +4,8 @@ import { Home } from './screens/home';
 import ServiceListing from './screens/ServiceListing';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
+import LawyerRegister from './screens/LawyerRegister';
+import LawyerLogin from './screens/LawyerLogin';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/loginuser' element={<Login />} />
       <Route path='/signupuser' element={<Signup />} />
+      <Route path='/loginlawyer' element={<LawyerLogin />} />
+      <Route path='/signuplawyer' element={<LawyerRegister />} />
       <Route path="/servicelisting" element={<ServiceListing />} />
     </Routes>
    </Router>
