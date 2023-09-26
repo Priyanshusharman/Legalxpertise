@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import '../css/userLogin.css'
-
+import Navbar from "../component/Navbar"
 const Login = () => {
   let navigate = useNavigate();
   const [credentials, setCredentials] = useState({
@@ -38,27 +38,25 @@ const Login = () => {
   }
   return (
     <>
-      <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-      </div>
+      <Navbar />
       <div className='userlogin'>
         <form id='loginform'>
           <h3>Login As user</h3>
+          <br />
           <label for="email">Email</label>
-          <input type="email" placeholder="Email" id="email" onchange={onChange} 
+          <input type="email" placeholder="Email" id="email" onChange={onChange}
             value={credentials.email} name="email"
           />
 
           <label for="password">Password</label>
-          <input type="password" placeholder="Password" id="loginpassword" onchange={onChange}
-          value={credentials.password} name="password"/>
-
-          <button onclick={handleSubmit} >Log In</button>
-
+          <input  type="password" placeholder="Password" id="loginpassword" onChange={onChange}
+            value={credentials.password} name="password" />
+          <br />
+          <button class="btn btn-primary" onclick={handleSubmit} >Log In</button>
+          <br />
           <div class="social">
-            <div class="go"><Link to="/">Login as Legal Worker</Link></div>
-            <div class="fb"><Link to="/signupuser">Register as User</Link></div>
+            <div class="go"><Link to="/"><button type="button" class="btn btn-secondary">Login as user</button></Link></div>
+            <div class="fb"><Link to="/signupuser"><button type="button" class="btn btn-secondary">Register as User</button></Link></div>
           </div>
         </form>
       </div>

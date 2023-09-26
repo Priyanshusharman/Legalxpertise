@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../css/stylesRegister.css'
-
+import Navbar from '../component/Navbar'
 
 const Signup = () => {
 
@@ -36,10 +36,7 @@ const Signup = () => {
 
     return (
         <>
-        <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        </div>
+        <Navbar/>
         <div className='user-signup'>
         <form id='user-signup-form' method='POST'>
             <h3>Register As user</h3>
