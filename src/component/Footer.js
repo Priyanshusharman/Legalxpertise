@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/images/LegalXpertise-logo.jpg'
 
 export default function Footer() {
   return (
     <>
       <footer id="footer" className="footer">
     <div className="footer-div">
-      <div><img src="../assets/images/LegalXpertise-logo.jpg" alt="logo"/></div>
+      <div><img src={logo} alt="logo" style={{ width: '400px', height: '100px' }} /></div>
       <div>
         <ul className="ul-footer">
           <li><i className="social-icon fab fa-facebook-f"></i>

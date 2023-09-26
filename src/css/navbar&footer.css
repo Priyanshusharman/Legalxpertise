@@ -178,3 +178,8 @@ nav.navbar {
     width: 75%;
     height: 90%;
 }
+
+.footer-div img{
+    width: 100px;
+    height: 40px;
+}
