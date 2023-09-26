@@ -9,7 +9,7 @@ import pfp from '../assets/images/profile-user.png'
 const ServiceListing = () => {
 
 //   const loadData = async () => {
-//     const response = await fetch("http://localhost:7000/api/search/criminallawyer", {
+//     const response = await fetch("https://legalxpertise.onrender.com/api/search/criminallawyer", {
 //         method: "get",
 //         headers: {
 //             'Content-Type': 'application/json'

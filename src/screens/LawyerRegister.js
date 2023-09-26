@@ -21,7 +21,7 @@ const LawyerRegister = () => {
 
     const handleSubmit =async (e)=>{
         e.preventDefault();
-        const response = await fetch("http://localhost:7000/api/lawyerauth/createLawyer",{
+        const response = await fetch("https://legalxpertise.onrender.com/api/lawyerauth/createLawyer",{
             method:'POST',
             headers:{
                 'Content-type': 'application/json'
