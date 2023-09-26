@@ -6,6 +6,7 @@ import Login from './screens/Login';
 import Signup from './screens/Signup';
 import LawyerRegister from './screens/LawyerRegister';
 import LawyerLogin from './screens/LawyerLogin';
+import AboutUs from './screens/AboutUs'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/loginlawyer' element={<LawyerLogin />} />
       <Route path='/signuplawyer' element={<LawyerRegister />} />
       <Route path="/servicelisting" element={<ServiceListing />} />
+      <Route path="/aboutus" element={<AboutUs/>} />
     </Routes>
    </Router>
    </>

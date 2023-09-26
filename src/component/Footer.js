@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <footer id="footer" className="footer">
     <div className="footer-div">
-      <div><img src="" alt="logo"/></div>
+      <div><img src="../assets/images/LegalXpertise-logo.jpg" alt="logo"/></div>
       <div>
         <ul className="ul-footer">
           <li><i className="social-icon fab fa-facebook-f"></i>
@@ -20,7 +20,6 @@ export default function Footer() {
     <div className="footer-div">
       <h3>SOLUTIONS</h3>
       <ul className="ul-footer">
-
         <li><Link className="a-footer" to="">Talk To Lawyer</Link></li>
         <li><Link className="a-footer" to="">Property</Link></li>
         <li><Link className="a-footer" to="">Document</Link></li>
@@ -42,7 +41,7 @@ export default function Footer() {
       </div>
       <div>
         <ul className="ul-footer">
-          <li><Link className="a-footer" to="aboutus.html">About Us</Link></li>
+          <li><Link className="a-footer" to="/aboutus">About Us</Link></li>
           <li><Link className="a-footer" to="mailto:agarwalmanan69@email.com">Contact Us</Link></li>
           <li><Link className="a-footer" to="">Blogs</Link></li>
           <li><Link className="a-footer" to="">Careers</Link></li>
