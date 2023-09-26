@@ -9,18 +9,18 @@ const AboutUs = () => {
         <div>
             <Navbar />
             <Navjustic />
-            <div class="about-us">
+            <div className="about-us">
                 <h1>About Us</h1>
             </div>
-            <div class="about-us-text">
+            <div className="about-us-text">
                 <h4>Welcome to LegalXpertise, your gateway to accessible and transparent legal services in India. Our journey began with a simple yet profound vision: to bridge the gap between legal service providers and individuals seeking legal support. We believe that everyone deserves equal access to justice, and we're here to make it a reality.</h4>
             </div>
-            <div class="mid-content">
-                <div class="mission">
+            <div className="mid-content">
+                <div className="mission">
                     <h1>Our Mission</h1>
-                    <div class="mission-content">
+                    <div className="mission-content">
                         <img src="https://img.freepik.com/premium-vector/successful-businessmen-climbing-his-mind-holding-victory-flag-business-purpose-success-mi_954303-246.jpg?w=826" alt="" />
-                        <div class="mission-description">
+                        <div className="mission-description">
                             <h5>
                                 At LegalXperts, our mission is clear: to empower individuals and businesses across India by connecting them with skilled legal service providers. We are dedicated to:
                             </h5>

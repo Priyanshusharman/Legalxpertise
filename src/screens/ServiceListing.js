@@ -38,40 +38,40 @@ const ServiceListing = () => {
         <Card />
         </div>
         </div>
-        <div class="main2">
+        <div className="main2">
             <h1>Leaderboard</h1>
-            <div class="leaderboard">
-                <div class="lead-head">
+            <div className="leaderboard">
+                <div className="lead-head">
                     <h2>Rank</h2>
                     <h2>Player</h2>
                     <h2>Points</h2>
                 </div>
-                <div class="lead-data">
+                <div className="lead-data">
                     <h3>1</h3>
                     <h3><img src={pfp} alt=""/>Khushi Singh</h3>
                     <h3>4000</h3>
                 </div>
-                <div class="lead-data">
+                <div className="lead-data">
                     <h3>2</h3>
                     <h3><img src={pfp} alt=""/>Raghav Sharma</h3>
                     <h3>3500</h3>
                 </div>
-                <div class="lead-data">
+                <div className="lead-data">
                     <h3>3</h3>
                     <h3><img src={pfp} alt=""/>Manan Agarwal</h3>
                     <h3>3000</h3>
                 </div>
-                <div class="lead-data">
+                <div className="lead-data">
                     <h3>4</h3>
                     <h3><img src={pfp} alt=""/>Piyush Agarwal</h3>
                     <h3>2500</h3>
                 </div>
-                <div class="lead-data">
+                <div className="lead-data">
                     <h3>5</h3>
                     <h3><img src={pfp} alt=""/>Priyanshu Sharman</h3>
                     <h3>2000</h3>
                 </div>
-                <div class="lead-data">
+                <div className="lead-data">
                     <h3>6</h3>
                     <h3><img src={pfp} alt="" />Sajal Sharma</h3>
                     <h3>1900</h3>

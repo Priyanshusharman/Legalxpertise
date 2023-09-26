@@ -48,7 +48,7 @@ const LawyerRegister = () => {
         <form id='user-signup-form' method='POST'>
             <h3>Register As Worker</h3>
 
-            <label for="name">Full Name</label>
+            <label htmlFor="name">Full Name</label>
             <input 
                 type="text" 
                 placeholder="Enter your full name" 
@@ -58,7 +58,7 @@ const LawyerRegister = () => {
                 value={credentials.name}
                 />
 
-            <label for="dob">Date of Birth</label>
+            <label htmlFor="dob">Date of Birth</label>
             <input type="date" placeholder="Date of Birth" id="dob" onChange={onChange}
             name='dob'
             value={credentials.dob} />
@@ -69,16 +69,16 @@ const LawyerRegister = () => {
                 value={credentials.email}
             />
 
-            <label for="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input type="password" placeholder="Password" id="password" onChange={onChange} 
             name = "password"
                 value={credentials.password}
             />
 
             <button onClick={handleSubmit}>Register </button>
-            <div class="social">
-                <div class="go"><Link to="/signupuser">Register as user</Link></div>
-                <div class="fb"><Link to="/loginlawyer">Login as worker</Link></div>
+            <div className="social">
+                <div className="go"><Link to="/signupuser">Register as user</Link></div>
+                <div className="fb"><Link to="/loginlawyer">Login as worker</Link></div>
             </div> 
             </form>
         </div>

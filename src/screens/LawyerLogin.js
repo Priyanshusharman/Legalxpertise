@@ -45,20 +45,20 @@ const LawyerLogin = () => {
         <form id='loginform'>
           <h3>Login As Legal Worker</h3>
           <br />
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input type="email" placeholder="Email" id="email" onChange={onChange}
             value={credentials.email} name="email"
           />
 
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input className='boo' type="password" placeholder="Password" id="loginpassword" onChange={onChange}
             value={credentials.password} name="password" />
           <br />
-          <button class="btn btn-primary" onclick={handleSubmit} >Log In</button>
+          <button className="btn btn-primary" onclick={handleSubmit} >Log In</button>
           <br />
-          <div class="social">
-            <div class="go"><Link to="/loginuser"><button type="button" class="btn btn-secondary">Login as User</button></Link></div>
-            <div class="fb"><Link to="/signuplawyer"><button type="button" class="btn btn-secondary">Register as Legal Worker</button></Link></div>
+          <div className="social">
+            <div className="go"><Link to="/loginuser"><button type="button" className="btn btn-secondary">Login as User</button></Link></div>
+            <div className="fb"><Link to="/signuplawyer"><button type="button" className="btn btn-secondary">Register as Legal Worker</button></Link></div>
           </div>
         </form>
       </div>
