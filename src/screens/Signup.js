@@ -56,7 +56,7 @@ const Signup = () => {
             name='dob'
             value={credentials.dob} />
 
-            <label fordsaf="email">Email</label>
+            <label for="email">Email</label>
             <input type="email" placeholder="Email" id="email" onChange={onChange} 
             name="email"
                 value={credentials.email}
