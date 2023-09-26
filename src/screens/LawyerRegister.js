@@ -86,4 +86,4 @@ const LawyerRegister = () => {
   )
 }
 
-export default Signup
+export default LawyerRegister
