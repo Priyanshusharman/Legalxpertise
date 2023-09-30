@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState} from 'react'
+import { Link,useNavigate } from 'react-router-dom'
 import '../css/stylesRegister.css'
 import Navbar from '../component/Navbar'
-
 const Signup = () => {
-
+    let navigate = useNavigate();
     const [credentials,setCredentials] = useState({
         name:'',
         dob:'',
@@ -23,9 +22,14 @@ const Signup = () => {
         });
         const json = await response.json();
         console.log(json.success);
-        if(!json.success){
+        if (json.success) {
+            navigate('/show');
+            localStorage.setItem("authToken", json.authToken);
+            localStorage.setItem("userEmail", credentials.email);
+          }
+          else{
             alert("Enter Valid Credentials");
-        }
+          }
     }
     
     const onChange = async (event)=>{

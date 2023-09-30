@@ -20,13 +20,13 @@ const Login = () => {
     });
     const json = await response.json();
     console.log(json);
-    if (!json.success) {
-      alert("Enter Valid Credentials");
-    }
     if (json.success) {
-      navigate('/');
+      navigate('/show');
       localStorage.setItem("authToken", json.authToken);
       localStorage.setItem("userEmail", credentials.email);
+    }
+    else{
+      alert("Enter Valid Credentials");
     }
   }
 

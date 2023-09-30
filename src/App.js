@@ -7,6 +7,7 @@ import Signup from './screens/Signup';
 import LawyerRegister from './screens/LawyerRegister';
 import LawyerLogin from './screens/LawyerLogin';
 import AboutUs from './screens/AboutUs'
+import Aftersign from './screens/Aftersign';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/signuplawyer' element={<LawyerRegister />} />
       <Route path="/servicelisting" element={<ServiceListing />} />
       <Route path="/aboutus" element={<AboutUs/>} />
+      <Route path="/show" element={<Aftersign/>} />
     </Routes>
    </Router>
    </>
